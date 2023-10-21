@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="full-page">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700;1,800&family=Rock+Salt&family=Space+Grotesk:wght@300;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+        <link rel="stylesheet" href="styles/styles.css" />
+        <title>Connect-4</title>
+    </head>
+    <body>
+        <header class="nav-bar">
+            <div class="mode material-symbols-outlined" data-mode="light">
+                light_mode
+            </div>
+        </header>
+        <div class="upper heading">Welcome to</div>
+        <div class="lower heading">CONNECT-4</div>
+        <div class="container">
+            <div class="welcome-wrapper">
+                <button id="host">HOST A BOARD</button>
+                <button id="join">JOIN A GAME</button>
+            </div>
+            <div class="board">
+                <!-- Row 1 -->
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+
+                <!-- Row 2 -->
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+
+                <!-- Row 3 -->
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+
+                <!-- Row 4 -->
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+
+                <!-- Row 5 -->
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+
+                <!-- Row 6 -->
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+                <div class="slots notDone"></div>
+            </div>
+            <div class="status">
+                <p></p>
+            </div>
+        </div>
+        <script type="text/javascript" src="scripts/welcome.js" defer></script>
+        <script type="text/javascript" src="scripts/host.js" defer></script>
+        <script type="text/javascript" src="scripts/main-game.js" defer></script>
+    </body>
+</html>

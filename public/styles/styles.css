@@ -1,0 +1,121 @@
+:root {
+    --border-check: 2px red solid;
+    --theme-text-colour: #262626;
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    padding-inline: 2rem;
+}
+
+.heading {
+    color: var(--theme-text-colour);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    padding-top: 12vh;
+    text-decoration: underline red 0.5rem;
+}
+
+.upper {
+    font-size: 3rem;
+    visibility: visible;
+}
+
+.lower {
+    padding-top: 0;
+    font-size: 7rem;
+}
+
+.container {
+    height: fit-content;
+    margin: 15vh;
+    gap: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.welcome-wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2em;        
+    z-index: 1000;
+}
+
+button {
+    width: 14rem;
+    font-weight: 700;
+    aspect-ratio: 2/0.8;
+    font-size: 1.2rem;
+    border-radius: 10vh;
+    cursor: pointer;
+    border: none;
+    background-color: hsl(0, 0%, 91%);
+}
+
+#host:hover {
+    background-color: hsl(5, 94%, 60%);
+}
+
+#join:hover {
+    background-color: hsl(204, 100%, 65%);
+}
+
+.mode {
+    position: absolute;
+    right: 2rem;
+    top: 1.25rem;
+    cursor: pointer;
+    /* -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none; */
+    user-select: none;
+    /* -o-user-select: none; */
+}
+
+@keyframes boardZoomIn {
+    from {
+        scale: 0;
+    }
+    to {
+        scale: 0.9;
+    }
+}
+
+.board {
+    visibility: hidden;
+    width: 80vh;
+    height: 60vh;
+    scale: 0.9;
+    position: absolute;
+    background: rgb(90, 135, 195);
+    bottom: -20vh;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 5px;
+    border: white 10px solid;
+    border-radius: 10px;
+    /* animation: boardZoomIn 1s forwards; */
+    transform-origin: center;
+}
+
+.slots {
+    width: 70%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    background-color: white;
+    cursor: pointer;
+}
+
+.status {
+    position: absolute;
+    top: 33vh;
+    font-size: 1.75rem;
+    color: red;
+    z-index: 1000;
+}
