@@ -22,6 +22,15 @@ body {
     visibility: visible;
 }
 
+@keyframes mistify {
+    from {
+        scale: 1;
+    }
+    to {
+        scale: 0;
+    }
+}
+
 .lower {
     padding-top: 0;
     font-size: 7rem;
@@ -73,15 +82,6 @@ button {
     -ms-user-select: none; */
     user-select: none;
     /* -o-user-select: none; */
-}
-
-@keyframes boardZoomIn {
-    from {
-        scale: 0;
-    }
-    to {
-        scale: 0.9;
-    }
 }
 
 .board {

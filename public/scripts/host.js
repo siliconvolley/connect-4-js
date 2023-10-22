@@ -6,6 +6,15 @@ const lowerHeading = document.querySelector('.lower');
 
 host.addEventListener("click", () => {
     const board = document.querySelector('.board');
+
+    // upperHeading.animate([
+    //     { transform: 'scale(1)' },
+    //     { transform: 'scale(0)' },
+    // ], {
+    //     duration: 350,
+    //     iterations: 1,
+    //     easing: 'ease-in-out',
+    // });
   
     lowerHeading.animate ([
         { transform: 'scale(1) translateY(0)' },
@@ -13,7 +22,7 @@ host.addEventListener("click", () => {
     ], {
         duration: 350,
         iterations: 1,
-        easing: 'ease-in-out',
+        easing: 'ease-in-out'
     });
 
     board.animate([
@@ -23,21 +32,11 @@ host.addEventListener("click", () => {
     ], {
         duration: 500,
         iterations: 1,
-        easing: 'ease-in-out',
+        easing: 'ease-in-out'
     });
-    
-    upperHeading.animate ([
-        { transform: 'scale(0.9)' },
-        { transform: 'scale(0)' }
-    ], {
-        duration: 350,
-        iterations: 1,
-        easing: 'ease-in-out',
-    });
-
 
     board.style.visibility = "visible";
     welcomeButtons.style.visibility = "hidden";
-    upperHeading.style.visibility = "hidden";
+    upperHeading.style.animation = "mistify 350ms forwards";
     lowerHeading.style.transform = "scale(0.5) translateY(-28vh)";
 });
