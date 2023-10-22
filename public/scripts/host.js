@@ -6,31 +6,22 @@ const lowerHeading = document.querySelector('.lower');
 
 host.addEventListener("click", () => {
     const board = document.querySelector('.board');
-    
+  
     lowerHeading.animate ([
-        { transform: 'scale(1)', transform: 'translateY(0)' },
-        { transform: 'scale(0.5)', transform: 'translateY(-28vh)' }
+        { transform: 'scale(1) translateY(0)' },
+        { transform: 'scale(0.5) translateY(-28vh)' }
     ], {
         duration: 350,
         iterations: 1,
         easing: 'ease-in-out',
     });
-    
-    // lowerHeading.animate ([
-    //     { transform: 'translateY(0)' },
-    //     { transform: 'translateY(-28vh)' }
-    // ], {
-    //     duration: 350,
-    //     iterations: 1,
-    //     easing: 'ease-in-out',
-    // });
-    
+
     board.animate([
         { transform: 'scale(0)' },
         { transform: 'scale(0.9)' },
         { visibility: 'hidden' }
     ], {
-        duration: 350,
+        duration: 500,
         iterations: 1,
         easing: 'ease-in-out',
     });
