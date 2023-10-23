@@ -6,16 +6,7 @@ const lowerHeading = document.querySelector('.lower');
 
 host.addEventListener("click", () => {
     const board = document.querySelector('.board');
-
-    // upperHeading.animate([
-    //     { transform: 'scale(1)' },
-    //     { transform: 'scale(0)' },
-    // ], {
-    //     duration: 350,
-    //     iterations: 1,
-    //     easing: 'ease-in-out',
-    // });
-  
+    
     lowerHeading.animate ([
         { transform: 'scale(1) translateY(0)' },
         { transform: 'scale(0.5) translateY(-28vh)' }

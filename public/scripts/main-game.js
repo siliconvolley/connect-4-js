@@ -100,6 +100,7 @@ function mainGame() {
 
         slot.setAttribute("data-row", row);
         slot.setAttribute("data-column", column);
+        slot.setAttribute("slot-colour", "white");
     });
     createEmptyBoard();
 
@@ -125,6 +126,7 @@ function mainGame() {
                 );
 
                 selectedDiv.style.backgroundColor = colour;
+                selectedDiv.setAttribute("slot-colour", colour);
                 // console.log("Slots left", clickedRow - 1); // ? TESTING PURPOSES
                 boardMatrix[lastRowID-1][clickedColumn-1] = colour; 
                 columnEmptySlots.status[clickedColumn]--;
