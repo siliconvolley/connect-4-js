@@ -115,8 +115,9 @@ button {
 }
 
 .status {
-    position: absolute;
-    top: min(45vh, 18rem);
+    display: flex;
+    justify-content: center;
+    padding-top: 15vh;
     font-size: min(4vw, 1.5rem);
     color: red;
     z-index: 1000;
