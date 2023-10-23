@@ -3,6 +3,7 @@ const mode = document.querySelector(".mode");
 const fullPage = document.querySelector(".full-page");
 const heading = document.querySelectorAll(".heading");
 const slots = document.querySelectorAll(".slots");
+const board = document.querySelector(".board");
 
 mode.addEventListener("click", () => {
     if (mode.getAttribute("data-mode") === "light") {
@@ -19,6 +20,8 @@ mode.addEventListener("click", () => {
                 slot.setAttribute("slot-colour", "dark");
             }
         });
+        board.style.border = "white 10px solid";
+
         mode.setAttribute("data-mode", "dark");
     } else {
         mode.innerHTML = "light_mode";
@@ -34,6 +37,8 @@ mode.addEventListener("click", () => {
                 slot.setAttribute("slot-colour", "white");
             }
         });
+        board.style.border = "lightgrey 10px solid";
+        
         mode.setAttribute("data-mode", "light");
     }
 });

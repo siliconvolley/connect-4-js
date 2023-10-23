@@ -37,20 +37,22 @@ body {
 @keyframes mistify {
     from {
         scale: 1;
+        visibility: visible;
     }
     to {
         scale: 0;
+        visibility: hidden;
     }
 }
 
 .lower {
     padding-top: 0;
-    font-size: min(15vw, 7rem);
+    font-size: min(14vw, 7rem);
 }
 
 .container {
     height: 12vh;
-    padding-block: min(15vw, 5rem);
+    padding-block: min(10vw, 5rem);
     gap: 10vh;
     display: flex;
     justify-content: center;
@@ -97,7 +99,7 @@ button {
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(6, 1fr);
     gap: 5px;
-    border: white 10px solid;
+    border: lightgrey 10px solid;
     border-radius: 10px;
     transform-origin: center;
 }
@@ -114,7 +116,7 @@ button {
 
 .status {
     position: absolute;
-    top: 45vh;
+    top: min(45vh, 18rem);
     font-size: min(4vw, 1.5rem);
     color: red;
     z-index: 1000;

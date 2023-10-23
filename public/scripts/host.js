@@ -6,7 +6,7 @@ const lowerHeading = document.querySelector('.lower');
 
 host.addEventListener("click", () => {
     const board = document.querySelector('.board');
-    
+
     lowerHeading.animate ([
         { transform: 'scale(1) translateY(0)' },
         { transform: 'scale(0.5) translateY(-28vh)' }
@@ -28,6 +28,6 @@ host.addEventListener("click", () => {
 
     board.style.visibility = "visible";
     welcomeButtons.style.visibility = "hidden";
-    upperHeading.style.animation = "mistify 350ms forwards";
+    upperHeading.style.animation = "mistify 350ms forwards";``
     lowerHeading.style.transform = "scale(0.5) translateY(-28vh)";
 });
