@@ -1,4 +1,3 @@
-
 const mode = document.querySelector(".mode");
 const fullPage = document.querySelector(".full-page");
 const heading = document.querySelectorAll(".heading");

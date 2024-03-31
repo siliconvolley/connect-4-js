@@ -1,11 +1,10 @@
-
 const host = document.querySelector("#host");
 const welcomeButtons = document.querySelector(".welcome-wrapper");
 const upperHeading = document.querySelector('.upper');
 const lowerHeading = document.querySelector('.lower');
 
 host.addEventListener("click", () => {
-    const board = document.querySelector('.board');
+    const board = document.querySelector('.board'); 
 
     lowerHeading.animate ([
         { transform: 'scale(1) translateY(0)' },
