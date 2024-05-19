@@ -2,17 +2,17 @@
 
 ## To run this locally
 
-To initialize node:
+1. To initialize node:
 ```
 npm init
 ```
 
-To install the dependencies:
+2. To install the dependencies:
 ```
 npm i
 ```
 
-To run the program:
+3. To run the program:
 ```
 npm start
 ```
