@@ -1,6 +1,7 @@
 const socket = io();
 const notDone = document.querySelectorAll(".notDone");
 var statusElement = document.querySelector(".status p");
+var gameBoard = document.querySelector(".board");
 
 let columnEmptySlots = {
     status: { 1: 6, 2: 6, 3: 6, 4: 6, 5: 6, 6: 6, 7: 6 },
@@ -10,9 +11,10 @@ let redCoinsCount = 0,
     blueCoinsCount = 0;
 let colour, clickedRow, lastRowID, clickedColumn;
 let boardMatrix = [];
+let gameIsOver = false;
 
 socket.on("connect", () => {
-    console.log("Welcome to Connect-4! <3");
+    console.log("Joined Successfully ✅ (Client-side)");
 });
 
 socket.on("update-slot", (colour, row, column) => {
@@ -103,6 +105,7 @@ function connected4Check(colour) {
 }
 
 function gameOver() {
+    gameIsOver = true;
     notDone.forEach((slot) => {
         slot.className = "slots Done";
     });
@@ -124,6 +127,9 @@ function mainGame() {
     let clickCount = 0;
     notDone.forEach((slot) => {
         slot.addEventListener("click", () => {
+            
+            if (gameIsOver) return;
+
             if ((clickCount + 1) % 2 == 0) {
                 colour = "blue";
                 blueCoinsCount++;
@@ -160,5 +166,3 @@ function mainGame() {
 }
 
 mainGame();
-
-export { clickCount };
