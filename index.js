@@ -13,7 +13,11 @@ let roomCode;
 app.use(express.static(path.resolve("public")));
 
 app.get("/", (req, res) => {
-    return res.sendFile("public/index.html");
+    return res.sendFile("public/host.html");
+});
+
+app.get("/host", (req, res) => {
+    return res.sendFile("public/host.html");
 });
 
 io.on("connection", (socket) => {

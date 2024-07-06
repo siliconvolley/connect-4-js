@@ -13,11 +13,7 @@ body {
     right: 2rem;
     top: 1.25rem;
     cursor: pointer;
-    /* -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none; */
     user-select: none;
-    /* -o-user-select: none; */
 }
 
 .heading {
