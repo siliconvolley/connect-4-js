@@ -8,6 +8,11 @@ body {
     padding-inline: 2rem;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .mode {
     position: absolute;
     right: 2rem;
